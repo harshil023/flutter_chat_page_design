@@ -1,6 +1,6 @@
 name: flutter_chat_page_design
-description: Flutter Chat UI
-version: 0.0.1
+description: A package provides an easy way to add design for chat page in Flutter Project.
+version: 0.0.4
 homepage:
 repository: https://github.com/harshil023/flutter_chat_page_design.git
 

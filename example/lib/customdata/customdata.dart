@@ -18,11 +18,11 @@ class CustomData {
     {'message': 'where are you', 'isSender': true, 'date': '24-08-2023'}
   ];
   List<ChatModel> chatListnew = [];
-  ChatModel chatModel = new ChatModel();
+  ChatModel chatModel =  ChatModel();
 
   List<ChatModel> setData() {
     for(int i =0;i<chatList.length;i++){
-      ChatModel chatModel = new ChatModel();
+      ChatModel chatModel =  ChatModel();
       chatModel.message=chatList.elementAt(i)['message'];
       chatModel.isSender=chatList.elementAt(i)['isSender'];
       chatModel.date=chatList.elementAt(i)['date'];

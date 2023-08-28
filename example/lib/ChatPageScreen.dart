@@ -4,23 +4,22 @@ import 'package:flutter_chat_page_design/model/chatmodel.dart';
 
 import 'customdata/customdata.dart';
 
-class ChatPageScreen extends StatefulWidget {
-  const ChatPageScreen({super.key});
+class ChatPage extends StatefulWidget {
+  const ChatPage({super.key});
 
   @override
-  State<ChatPageScreen> createState() => _ChatPageScreenState();
+  State<ChatPage> createState() => _ChatPageState();
 }
 
-class _ChatPageScreenState extends State<ChatPageScreen> {
-  CustomData customData = new CustomData();
+class _ChatPageState extends State<ChatPage> {
+  CustomData customData =  CustomData();
   List<ChatModel> chatList = [];
 
   @override
   void initState() {
-    // TODO: implement initState
+
     super.initState();
     chatList = customData.setData();
-    print("initState" + chatList.elementAt(0).message);
   }
 
   @override

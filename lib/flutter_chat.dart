@@ -6,14 +6,16 @@ import 'package:flutter_chat_page_design/widget/chatbubble.dart';
 import 'model/chatmodel.dart';
 
 class ChatListview extends StatelessWidget {
-  ChatListview(
-      {required this.chatList,
+  const ChatListview(
+      {super.key,
+      required this.chatList,
       required this.isDategroup,
       this.gropByTextsize = 12,
       this.bubbleBorder = 15,
       this.senderBgColor = Colors.blue,
       this.receiverBgColor = Colors.grey,
       this.senderTextColor = Colors.white,
+      this.groupByTextColor = Colors.white,
       this.receiverTextColor = Colors.black,
       this.isReverse = true});
 
@@ -25,13 +27,14 @@ class ChatListview extends StatelessWidget {
   final Color senderBgColor,
       receiverBgColor,
       senderTextColor,
+      groupByTextColor,
       receiverTextColor;
   final bool isReverse;
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        padding: EdgeInsets.all(0),
+        padding: const EdgeInsets.all(0),
         reverse: isReverse,
         itemCount: chatList.length,
         shrinkWrap: true,
@@ -54,7 +57,7 @@ class ChatListview extends StatelessWidget {
                   style: TextStyle(
                       fontSize: gropByTextsize,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: groupByTextColor),
                 ),
               ),
               ChatBubble(

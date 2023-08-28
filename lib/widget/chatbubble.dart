@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ChatBubble extends StatelessWidget {
-  ChatBubble(
-      {
+  const ChatBubble(
+      {super.key,
       required this.message,
       required this.isSender,
       required this.bubbleBorder,
@@ -10,6 +10,7 @@ class ChatBubble extends StatelessWidget {
       required this.senderBgColor,
       required this.receiverTextColor,
       required this.senderTextColor});
+
   final String message;
   final bool isSender;
   final double bubbleBorder;

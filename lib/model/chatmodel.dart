@@ -1,11 +1,7 @@
-class ChatModel{
-
-
+class ChatModel {
   var _message = "";
   var _isSender = false;
   var _date = "";
-
-
 
   get date => _date;
 

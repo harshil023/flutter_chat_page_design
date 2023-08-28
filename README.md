@@ -17,7 +17,7 @@ Create chat page design with only pass the message list.
 ```dart
 
 Install
-  flutter_chat_page_design : 0.0.1
+  flutter_chat_page_design : 0.0.4
 
 Import
 
